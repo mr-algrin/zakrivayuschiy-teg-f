@@ -2,6 +2,10 @@
 :root {
   --bg-color: #ffffff;
   --accent-color: #000000;
+  --main-font: 'Inter-Regular';
+  --accent-font: 'PressStart2P';
+  --main-font-title-wgth: 700;
+  --main-font-text-wgth: 400;
   --bg-grid-gradient-color: #d3d3d3;
   --bg-gradient-primary-color: #e7e7e7;
   --bg-gradient-secondary-color: #1a1a1a;
@@ -19,5 +23,9 @@
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(180deg, var(--bg-gradient-primary-color) 0%, var(--bg-gradient-secondary-color) 100%);
+    linear-gradient(
+      180deg,
+      var(--bg-gradient-primary-color) 0%,
+      var(--bg-gradient-secondary-color) 100%
+    );
 }

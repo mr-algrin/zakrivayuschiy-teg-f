@@ -19,6 +19,11 @@
   --bg-grid-gradient-color: #d3d3d3;
   --bg-gradient-primary-color: #e7e7e7;
   --bg-gradient-secondary-color: #1a1a1a;
+  font-variation-settings: 'wght' var(--main-font-text-wgth);
+}
+
+.theme-light .card__title {
+  font-variation-settings: 'wght' var(--main-font-title-wgth);
 }
 
 :root.theme-dark {
@@ -27,6 +32,9 @@
   --bg-grid-gradient-color: #000000;
   --bg-gradient-primary-color: #007f0c;
   --bg-gradient-secondary-color: #004306;
+  --main-font-title-wgth: 785;
+  --main-font-text-wgth: 465;
+
 }
 
 .theme-dark .page {
@@ -35,30 +43,48 @@
   --bg-grid-gradient-color: #000000;
   --bg-gradient-primary-color: #007f0c;
   --bg-gradient-secondary-color: #004306;
+  --main-font-title-wgth: 785;
+  --main-font-text-wgth: 465;
+  font-variation-settings: 'wght' var(--main-font-text-wgth), 'slnt' 0;
+}
+
+.theme-dark .card__title {
+  font-variation-settings: 'wght' var(--main-font-title-wgth), 'slnt' 0;
 }
 
 @media (prefers-color-scheme: dark) {
   .page {
+    --main-font-title-wgth: 785;
+    --main-font-text-wgth: 465;
     --bg-color: #000000;
     --accent-color: #00cc14;
     --bg-grid-gradient-color: #000000;
     --bg-gradient-primary-color: #007f0c;
     --bg-gradient-secondary-color: #004306;
     --bg-image: repeating-linear-gradient(
-      to right,
-      var(--bg-grid-gradient-color) 0,
-      var(--bg-grid-gradient-color) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      var(--bg-grid-gradient-color) 0,
-      var(--bg-grid-gradient-color) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(180deg, var(--bg-gradient-primary-color) 0%, var(--bg-gradient-secondary-color) 100%);
+        to right,
+        var(--bg-grid-gradient-color) 0,
+        var(--bg-grid-gradient-color) 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        var(--bg-grid-gradient-color) 0,
+        var(--bg-grid-gradient-color) 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(
+        180deg,
+        var(--bg-gradient-primary-color) 0%,
+        var(--bg-gradient-secondary-color) 100%
+      );
+    font-variation-settings: 'wght' var(--main-font-text-wgth), 'slnt' 0;
+  }
+
+  .card__title {
+    font-variation-settings: 'wght' var(--main-font-title-wgth), 'slnt' 0;
   }
 }
 

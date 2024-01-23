@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark"/>
+    <meta name="color-scheme" content="light dark" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -11,10 +11,17 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link
+      rel="shortcut icon"
+      href="./svg/favicon.svg"
+      type="image/svg+xml"
+    />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header content bordered-component">
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <h2 class="header__subtitle">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -41,7 +48,71 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="content">
+      <ul class="cards__list">
+        <li class="cards__item">
+          <article class="card bordered-component">
+            <h3 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h3>
+            <div class="card__image-container">
+              <img class="card__image" src="./images/sprint-0.png" alt=""/>
+              <span class="card__image-label">
+                &lt;/HTML&gt;
+              </span>
+            </div>
+            <div class="card__content">
+              <span class="card__content-description">
+                <p class="card__content-description__paragraph">
+                  Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+                </p>
+                <p class="card__content-description__paragraph">
+                  Место для ваших воспоминаний о начале обучения.
+                </p>
+              </span>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer content">
+      <button
+        type="button"
+        onclick="window['dialog'].showModal();"
+        class="save-button bordered-component"
+      >
+        <svg
+          class="floppy-icon"
+          viewBox="0 0 39 39"
+          width="21"
+          stroke="currentColor"
+        >
+          <use href="svg/floppy.svg#floppy" />
+        </svg>
+        <span class="button__text"> Сохранить на память </span>
+      </button>
+      <dialog id="dialog" class="save-dialog bordered-component">
+        <div class="save-dialog__content">
+          <svg
+            class="floppy-icon save-dialog__icon"
+            viewBox="0 0 39 39"
+            width="39"
+            stroke="currentColor"
+          >
+            <use href="svg/floppy.svg#floppy" />
+          </svg>
+          <span class="save-dialog__description">
+            Вставьте дискету, чтобы продолжить
+          </span>
+        </div>
+        <button
+          onclick="window['dialog'].close();"
+          class="save-dialog__button bordered-component"
+        >
+          ok
+        </button>
+      </dialog>
+    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
