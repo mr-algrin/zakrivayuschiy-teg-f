@@ -9,6 +9,8 @@
   --bg-grid-gradient-color: #d3d3d3;
   --bg-gradient-primary-color: #e7e7e7;
   --bg-gradient-secondary-color: #1a1a1a;
+  --buttton-text-color: #ffffff;
+  --heart-fill-color: #ff0000;
   --bg-image: repeating-linear-gradient(
       to right,
       var(--bg-grid-gradient-color) 0,

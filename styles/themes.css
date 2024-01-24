@@ -11,6 +11,7 @@
   --bg-grid-gradient-color: #d3d3d3;
   --bg-gradient-primary-color: #e7e7e7;
   --bg-gradient-secondary-color: #1a1a1a;
+  --buttton-text-color: #ffffff;
 }
 
 .theme-light .page {
@@ -19,6 +20,7 @@
   --bg-grid-gradient-color: #d3d3d3;
   --bg-gradient-primary-color: #e7e7e7;
   --bg-gradient-secondary-color: #1a1a1a;
+  --buttton-text-color: #ffffff;
   font-variation-settings: 'wght' var(--main-font-text-wgth);
 }
 
@@ -34,7 +36,7 @@
   --bg-gradient-secondary-color: #004306;
   --main-font-title-wgth: 785;
   --main-font-text-wgth: 465;
-
+  --buttton-text-color: #00cc14;
 }
 
 .theme-dark .page {
@@ -45,6 +47,7 @@
   --bg-gradient-secondary-color: #004306;
   --main-font-title-wgth: 785;
   --main-font-text-wgth: 465;
+  --buttton-text-color: #00cc14;
   font-variation-settings: 'wght' var(--main-font-text-wgth), 'slnt' 0;
 }
 
@@ -61,6 +64,7 @@
     --bg-grid-gradient-color: #000000;
     --bg-gradient-primary-color: #007f0c;
     --bg-gradient-secondary-color: #004306;
+    --buttton-text-color: #00cc14;
     --bg-image: repeating-linear-gradient(
         to right,
         var(--bg-grid-gradient-color) 0,
@@ -95,5 +99,6 @@
     --bg-grid-gradient-color: #d3d3d3;
     --bg-gradient-primary-color: #e7e7e7;
     --bg-gradient-secondary-color: #1a1a1a;
+    --buttton-text-color: #ffffff;
   }
 }
