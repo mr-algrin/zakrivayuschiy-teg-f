@@ -42,3 +42,72 @@
     opacity: 1;
   }
 }
+
+.theme-menu__button:hover,
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.heart {
+  fill: transparent;
+}
+
+.heart .contour {
+  fill: var(--accent-color);
+  transition: fill 0.1s linear;
+}
+
+.heart .core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
+}
+
+.heart .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.heart:hover .core {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
+}
+
+.heart:hover .main-body {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.heart:active .core {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.heart:active .main-body {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.is-liked .heart {
+  transform-origin: center;
+  animation: heart-liked 0.3s 0.1s linear alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: heart-sparks 0.3s 0.3s linear alternate;
+}

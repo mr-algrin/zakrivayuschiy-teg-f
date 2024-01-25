@@ -100,12 +100,6 @@
   background-color: transparent;
 }
 
-.theme-menu__button:hover,
-.theme-menu__button:disabled {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
 .theme-menu__button:hover {
   cursor: pointer;
 }
@@ -170,6 +164,8 @@
   display: block;
   width: 100%;
   height: auto;
+  object-position: center;
+  object-fit: cover;
 }
 
 .card__image-label {
@@ -238,74 +234,11 @@
 }
 
 .card__icon-button:focus {
-  outline: none;
+  outline-color: transparent;
 }
 
 .card__icon-button:focus-visible {
   outline-color: var(--accent-color);
-}
-
-.heart {
-  fill: transparent;
-}
-
-.heart .contour {
-  fill: var(--accent-color);
-  transition: fill 0.1s ease-out;
-}
-
-.heart .core {
-  fill: transparent;
-  transition: fill 0.3s ease-out 0.03s;
-}
-
-.heart .main-body {
-  fill: transparent;
-  transition: fill 0.3s ease-out;
-}
-
-.heart:hover .core {
-  fill: var(--accent-color);
-  transition: fill 0.3s ease-in;
-}
-
-.heart:hover .main-body {
-  fill: var(--accent-color);
-  transition: fill 0.3s ease-in 0.05s;
-}
-
-.heart:active .core {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s ease-in;
-}
-
-.heart:active .main-body {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s ease-in 0.05s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s ease-in;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s ease-in 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s ease-in 0.06s;
-}
-
-.is-liked .heart {
-  transform-origin: center;
-  animation: heart-liked 0.3s 0.1s ease-in alternate;
-}
-
-.like-icon.is-liked .sparks {
-  animation: heart-sparks 0.3s 0.3s ease-in alternate;
 }
 
 .sparks {
@@ -327,7 +260,6 @@
 .button:focus {
   box-shadow: 2px 2px 0px 0px var(--accent-color);
   outline: none;
-  transition: box-shadow 0.3s ease-in;
 }
 
 .button::after {
@@ -342,7 +274,6 @@
 
 .button:hover::after {
   width: 100%;
-  transition: width 0.5s ease-in-out;
 }
 
 .save-button {
