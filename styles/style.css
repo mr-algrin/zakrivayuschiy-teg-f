@@ -41,7 +41,7 @@
   position: relative;
   z-index: 1;
   color: var(--buttton-text-color, #ffffff);
-  font-family: var(--accent-font, serif);
+  font-family: var(--accent-font, fantasy);
   font-weight: normal;
   font-size: 14px;
   line-height: 12.6px;
@@ -63,7 +63,7 @@
   margin-bottom: 104px;
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   padding-block-end: 25px;
-  font-family: var(--accent-font, serif);
+  font-family: var(--accent-font, fantasy);
 }
 
 .header__logo {
@@ -122,14 +122,15 @@
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 0;
+  width: 100%;
   height: 2px;
   background-color: currentColor;
-  transition: width 0.3s ease-in;
+  transform-origin: left;
+  scale: 0;
 }
 
 .theme-menu__button:focus-visible::after {
-  width: 100%;
+  scale: 1;
 }
 
 .theme-menu__button:disabled::before {
@@ -164,8 +165,8 @@
   display: block;
   width: 100%;
   height: auto;
-  object-position: center;
   object-fit: cover;
+  object-position: center;
 }
 
 .card__image-label {
@@ -174,7 +175,7 @@
   right: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
   opacity: 0.5;
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-weight: normal;
   font-size: 14px;
   line-height: 1;
@@ -229,7 +230,6 @@
   outline-width: 2px;
   font-size: 0;
   background-color: transparent;
-  transition: outline-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -254,7 +254,6 @@
 .button {
   position: relative;
   box-shadow: none;
-  transition: box-shadow 0.3s ease-in;
 }
 
 .button:focus {
@@ -269,7 +268,6 @@
   width: 0;
   height: 100%;
   background-color: var(--accent-color);
-  transition: width 0.5s ease-in-out;
 }
 
 .button:hover::after {
@@ -300,7 +298,7 @@
   max-width: 357px;
   padding: 31.5px;
   color: currentColor;
-  font-family: var(--accent-font, serif);
+  font-family: var(--accent-font, fantasy);
   font-size: 14px;
 }
 
