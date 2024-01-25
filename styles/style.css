@@ -98,6 +98,7 @@
   font-size: 14px;
   line-height: 1;
   background-color: transparent;
+  text-transform: uppercase;
 }
 
 .theme-menu__button:hover {
@@ -314,6 +315,7 @@
 
 .save-dialog__description {
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .save-dialog__icon {
@@ -333,8 +335,7 @@
 }
 
 .save-dialog__form {
-  align-self: center;
-  width: fit-content;
+  width: 100%;
 }
 
 .save-dialog__form:focus-visible {
@@ -346,6 +347,7 @@
   line-height: 12.6px;
   text-transform: uppercase;
   cursor: pointer;
+  width: inherit;
 }
 
 .save-dialog__button:focus-visible {
