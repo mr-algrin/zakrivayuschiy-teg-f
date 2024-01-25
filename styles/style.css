@@ -71,6 +71,7 @@
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 1;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header__title {
@@ -417,34 +418,34 @@
   }
 }
 
-.card-image-two {
+.filter-grayscale {
   filter: grayscale(77%);
   mix-blend-mode: hard-light;
 }
 
-.card-image-tree {
+.filter-brightness {
   filter: brightness(50%);
   mix-blend-mode: exclusion;
 }
 
-.card-image-four {
+.filter-opacity {
   filter: opacity(40%);
   mix-blend-mode: luminosity;
 }
 
-.card-image-five {
+.filter-hue {
   filter: hue-rotate(90deg);
 }
 
-.card-image-six {
+.filter-shadow {
   filter: drop-shadow(0px 0px 0px grey) invert(40%);
 }
 
-.card-image-seven {
+.filter-sepia {
   filter: sepia(85%);
   mix-blend-mode: darken;
 }
 
-.card-image-eight {
+.filter-blur {
   filter: blur(5px);
 }
