@@ -74,6 +74,10 @@
   text-transform: uppercase;
 }
 
+.header__logo:focus-visible {
+  outline: none;
+}
+
 .header__title {
   margin-bottom: 25px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
@@ -341,18 +345,12 @@
   transition: width 0.5s ease-in-out;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 54px;
-  margin-bottom: 104px;
-}
-
 .save-button {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  margin: 54px auto 104px;
   padding: 15px 20px;
   cursor: pointer;
 }
@@ -405,11 +403,24 @@
   opacity: 0.7;
 }
 
+.save-dialog__form {
+  align-self: center;
+  width: fit-content;
+}
+
+.save-dialog__form:focus-visible {
+  outline: none;
+}
+
 .save-dialog__button {
   padding: 9px 17px;
   line-height: 12.6px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.save-dialog__button:focus-visible {
+  outline: none;
 }
 
 @media (width >= 1440px) {
