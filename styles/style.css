@@ -67,10 +67,10 @@
 }
 
 .header__logo {
-  text-decoration: none;
   margin-bottom: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 1;
+  text-decoration: none;
 }
 
 .header__title {
@@ -152,6 +152,8 @@
 .card__title {
   border-bottom: 2px solid var(--accent-color);
   padding: 3px 24px 3px 10px;
+  font-size: 18px;
+  line-height: 21.78px;
   font-variation-settings: "wght" var(--main-font-title-wgth);
 }
 
@@ -175,7 +177,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1;
-  text-transform: uppercase;
   text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color),
     1px 0 var(--bg-color), 0 -1px var(--bg-color);
   mix-blend-mode: hard-light;
@@ -203,6 +204,11 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
+}
+
+.card__content-description__paragraph {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .card__buttons-container {
@@ -302,9 +308,9 @@
 }
 
 .card__like-button {
+  min-width: 130px;
   padding: 9px 17px;
   cursor: pointer;
-  min-width: 130px;
 }
 
 .button {
@@ -409,4 +415,33 @@
   .save-button {
     flex-direction: row;
   }
+}
+
+.card-image-two {
+  mix-blend-mode: hard-light;
+}
+
+.card-image-tree {
+  mix-blend-mode: exclusion;
+}
+
+.card-image-four {
+  mix-blend-mode: luminosity;
+}
+
+.card-image-five {
+  filter: hue-rotate(90deg);
+}
+
+.card-image-six {
+  filter: drop-shadow(0px 0px 0px grey) invert(40%);
+}
+
+.card-image-seven {
+  filter: contrast(30%);
+  mix-blend-mode: hard-light;
+}
+
+.card-image-eight {
+  filter: blur(5px);
 }

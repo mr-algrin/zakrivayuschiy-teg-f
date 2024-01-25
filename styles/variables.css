@@ -2,8 +2,8 @@
 :root {
   --bg-color: #ffffff;
   --accent-color: #000000;
-  --main-font: 'Inter-Regular';
-  --accent-font: 'PressStart2P';
+  --main-font: "Inter-Regular";
+  --accent-font: "PressStart2P";
   --main-font-title-wgth: 700;
   --main-font-text-wgth: 400;
   --bg-grid-gradient-color: #d3d3d3;

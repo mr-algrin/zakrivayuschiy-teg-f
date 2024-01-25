@@ -21,11 +21,11 @@
   --bg-gradient-primary-color: #e7e7e7;
   --bg-gradient-secondary-color: #1a1a1a;
   --buttton-text-color: #ffffff;
-  font-variation-settings: 'wght' var(--main-font-text-wgth);
+  font-variation-settings: "wght" var(--main-font-text-wgth);
 }
 
 .theme-light .card__title {
-  font-variation-settings: 'wght' var(--main-font-title-wgth);
+  font-variation-settings: "wght" var(--main-font-title-wgth);
 }
 
 :root.theme-dark {
@@ -48,11 +48,11 @@
   --main-font-title-wgth: 785;
   --main-font-text-wgth: 465;
   --buttton-text-color: #00cc14;
-  font-variation-settings: 'wght' var(--main-font-text-wgth), 'slnt' 0;
+  font-variation-settings: "wght" var(--main-font-text-wgth), "slnt" 0;
 }
 
 .theme-dark .card__title {
-  font-variation-settings: 'wght' var(--main-font-title-wgth), 'slnt' 0;
+  font-variation-settings: "wght" var(--main-font-title-wgth), "slnt" 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,11 +84,11 @@
         var(--bg-gradient-primary-color) 0%,
         var(--bg-gradient-secondary-color) 100%
       );
-    font-variation-settings: 'wght' var(--main-font-text-wgth), 'slnt' 0;
+    font-variation-settings: "wght" var(--main-font-text-wgth), "slnt" 0;
   }
 
   .card__title {
-    font-variation-settings: 'wght' var(--main-font-title-wgth), 'slnt' 0;
+    font-variation-settings: "wght" var(--main-font-title-wgth), "slnt" 0;
   }
 }
 
