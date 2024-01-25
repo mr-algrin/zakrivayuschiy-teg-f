@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="shortcut icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      href="./images/mobile-icon.png"
+      sizes="256x256"
+    />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
@@ -48,15 +54,20 @@
       <ul class="cards__list">
         <li class="cards__item">
           <article class="card bordered-component">
-            <h3 class="card__title">
+            <h2 class="card__title">
               Фритрек и нулевой спринт: Подготовка к работе
-            </h3>
+            </h2>
             <div class="card__image-container">
-              <img
-                class="card__image"
-                src="./images/sprint-0.png"
-                alt="Картинка первого спринта"
-              />
+              <picture>
+                <source srcset="./images/sprint-1x.avif 1x" type="image/avif" />
+                <source srcset="./images/sprint-1x.png 1x" type="image/png" />
+                <source srcset="./images/sprint-1x.webp 1x" type="image/webp" />
+                <img
+                  class="card__image"
+                  src="./images/sprint-1x.png"
+                  alt="Картинка первого спринта"
+                />
+              </picture>
               <span class="card__image-label"> &lt;/HTML&gt; </span>
             </div>
             <div class="card__content">
@@ -111,10 +122,6 @@
             </div>
           </article>
         </li>
-        <!-- <li class="cards__item">
-          <article class="card bordered-component">
-          </article>
-        </li> -->
       </ul>
     </main>
     <footer class="footer content">
