@@ -418,14 +418,17 @@
 }
 
 .card-image-two {
+  filter: grayscale(77%);
   mix-blend-mode: hard-light;
 }
 
 .card-image-tree {
+  filter: brightness(50%);
   mix-blend-mode: exclusion;
 }
 
 .card-image-four {
+  filter: opacity(40%);
   mix-blend-mode: luminosity;
 }
 
@@ -438,8 +441,8 @@
 }
 
 .card-image-seven {
-  filter: contrast(30%);
-  mix-blend-mode: hard-light;
+  filter: sepia(85%);
+  mix-blend-mode: darken;
 }
 
 .card-image-eight {
