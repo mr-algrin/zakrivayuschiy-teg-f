@@ -217,6 +217,7 @@
 .card__content-description__paragraph {
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.006rem;
 }
 
 .card__buttons-container {
@@ -324,10 +325,6 @@
 .save-dialog__description {
   line-height: 21px;
   text-transform: uppercase;
-}
-
-.card__content-description__paragraph {
-  letter-spacing: 0.006rem;
 }
 
 .save-dialog__icon {
