@@ -217,7 +217,6 @@
 .card__content-description__paragraph {
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 0.006rem;
 }
 
 .card__buttons-container {
@@ -366,6 +365,10 @@
 @media (width < 376px) {
   .card__title {
     padding: 4px 10px 5.5px;
+  }
+
+  .card__content-description__paragraph {
+    letter-spacing: 0.006rem;
   }
 
   .save-button {
