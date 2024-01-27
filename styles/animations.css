@@ -43,28 +43,6 @@
   }
 }
 
-.theme-menu__button:hover,
-.theme-menu__button:disabled {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
-.theme-menu__button::after {
-  transition: scale 0.3s ease-in;
-}
-
-.card__icon-button {
-  transition: outline-color 0.3s ease;
-}
-
-.button {
-  transition: box-shadow 0.3s ease-in;
-}
-
-.button::after {
-  transition: width 0.5s ease-in-out;
-}
-
 .heart {
   fill: transparent;
 }
